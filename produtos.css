@@ -1,0 +1,116 @@
+/*uso do bg para a troca de cor de fundo
+  padding:preenchimento, responsavel por criar uma moldura por volta dos componentes */
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
+	/*a definição de 20px(a primeira casa será responsavel para o preenchimento na parte superior e inferior) 
+	  e 0px(a segunda casa será responsavel para o preenchimento para as partes laterais) */
+}
+
+/*uso do position:relative, você pode atribuir as funções a cada ambiente
+  ele aceita que atribua diferentes posições, porém todo componente que não é informado o estilo 
+  vem atribuido como position:absolute*/
+/*width é responsável pela largura do componente*/
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+/*display inline tem como função, fazer a captura de uma lista que receba dois elementos ou mais, 
+  e alinhar todos os elementos na mesma linha, funcionalidade muito usada em nav-bar*/
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+/*text-transform uppercase, tem como objetivo alterar todo o texto para 
+maiúsculo*/
+/*decoração de texto será inibida por conta de ser gerada pelo próprio navegador -> text-decoration: none;*/
+/*font weight serve para a estilização de textos --> text-decoration: none; serve para remover as decorações */
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+/*hover:tem como função, toda vez que o ponteiro do mouse estiver em cima do componente*
+		ele irá executar as ações definidas para a classe, */
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+/*o display inline-block, vai ter como definição o uso do inline, para o uso de uma lista na mesma linha
+  o block vai organizar todos os itens na mesma posição
+  text-align center para a centralização dos itens
+  vertical align top, deixar os componentes com um aspecto de estarem 'pendurados' e alinhados por uma linha na parte superior
+  border radius definição da borda curva quando necessário*/
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+	font-size: 40px;
+}
+
+/*componente após o hover, será quando o hover precisar entrar em ação somente em um componente especifico*/
+.produtos li:hover h2 {
+	font-size: 33px;
+	}
+
+/*active após a definição dos componentes é responsavel por toda vez que o usuário clicar em cima do item
+  executar a ação do que está predefinido para ele */
+.produtos li:active {
+	border-color: green;
+}
+
+.produtos h2 { 
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produtos-descricao {
+	font-size: 18px; 
+}
+
+.produtos-preco { 
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+footer {
+	text-align: center;
+	background: black;
+	padding: 40px 0;
+}
+
+.copyright {
+	color: white;
+	font-size: 13;
+}

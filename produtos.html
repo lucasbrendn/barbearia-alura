@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- o doctype é responsavel por passar as informações ao teu navegador -->
+<html>
+	<!-- head:cabeça é responsável por ser a cabeça que estrutura o site.. -->
+	<!-- o head também é responsável por passar as informações ao navegador -->
+	<head>
+		<meta charset="UTF-8">
+		<!-- inclusão do unicode -->
+		<title>Produtos - Barbearia Alura</title>
+		<!-- referenciamento dos arquivos -->
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="produtos.css">
+	</head>
+	<!-- body:será igual a apresentação do site, e o restante dos seus componentes -->
+	<body>
+		<!-- o header:cumpri a função de ser a primeira estrutura a ser apresentada no site -->
+		<header>
+			<!-- a apresentação da div:usa os seus conjuntos em blocos, ou em containers  -->
+			<!-- o uso do .css quando for declarado, será declarado da sequinte forma, .nomeClass {} -->
+			<div class="caixa">
+				<!-- declaração da imagem -->
+				<h1><img src="logo.png"></h1>
+				<!-- sinalizar barra de navegação -->
+				<nav>
+					<!-- lista não ordenada:ul -> ou seja, irá seguir a apresentação que o código demonstra de acordo com seu site -->
+					<ul>
+						<!-- conjunto de listas com referenciamento de redirecionamento:tag 'a' -->
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- inicio do 'main'  -->
+		<main>
+			<!-- declaração da classe .produtos -->
+			<!-- lembrando que podemos, definir mais a fundo a classe produtos -->
+			<!-- como por exemplo usando .produtos li {} nesse caso, as alterações só vão ser referentes ao li-->
+			<ul class="produtos">
+				<li>
+					<h2>Cabelo</h2>
+					<img src="cabelo.jpg" alt="">
+					<!--divisão das classes para cada item -->
+					<p class="produtos-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produtos-preco">R$ 25,00</p>
+				</li>
+				<li>
+					<h2>Barba</h2>
+					<img src="barba.jpg" alt="">
+					<p class="produtos-descricao">Corte e desenho profissional de barba</p>
+					<p class="produtos-preco">R$ 18,00</p>
+				</li> 
+				<li>
+					<h2>Cabelo + Barba</h2>
+					<img src="cabelo+barba.jpg" alt="">
+					<p class="produtos-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produtos-preco">R$ 35,00</p>
+				</li> 
+			</ul>
+		<!-- finalização do 'main'(conteudo principal da página)-->
+		</main>
+		<!-- será responsável por ser rodapé da página-->
+		<footer>
+			<img src="logo-branco.png" alt="">
+			<!-- caracter copyright:unicode-->
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
